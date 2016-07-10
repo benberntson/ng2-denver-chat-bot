@@ -1,0 +1,39 @@
+<!-- questions and answers here -->
+<div *ngIf="conversation">
+  <md-toolbar layout="row">
+    <div class="md-toolbar-tool">
+      Conversation
+    </div>
+  </md-toolbar>
+  <div *ngFor="let excerpt of conversation" class="convo-div">
+    <md-card class="question-card animated-card">
+      <h4 style="margin-bottom:10px">You</h4>
+      {{excerpt.question}}
+    </md-card>
+    <md-card class="answer-card animated-answer-card">
+      <h4 style="margin-bottom:10px">Robot</h4>
+      {{excerpt.answer}}
+    </md-card>
+  </div>
+</div>
+
+<md-card>
+  <a id="go-back-convo-btn" md-fab
+     [routerLink]="['../']"
+     color="neutral" class="back-arrow" >
+    <md-icon class="md-24">keyboard_backspace</md-icon>
+  </a>
+  <md-toolbar color="primary">Ask me a question!</md-toolbar>
+  <p></p>
+  <md-input bindon-ngModel="questionToBeAsked" (keyup)="onEnterKey($event)"
+            style="width: 100%" placeholder="Question">
+  </md-input>
+  <span class="card-buttons">
+    <button md-fab color="warn" (click)="onClear()">
+      <md-icon class="md-24">clear</md-icon>
+    </button>
+    <button md-fab color="primary" (click)="askQuestion()">
+      <md-icon class="md-24">add</md-icon>
+    </button>
+  </span>
+</md-card>

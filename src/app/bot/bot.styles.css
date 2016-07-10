@@ -1,0 +1,73 @@
+h1 {
+  font-family: Arial, Helvetica, sans-serif
+}
+
+.bot-avatar {
+  width: 10%;
+  height: 10%;
+}
+
+.card-buttons{
+  display: inline-block;
+  margin-left: 80%;
+}
+
+@media only screen and (max-width: 983px) {
+  .card-buttons {
+    display: inline-block;
+    margin-left: 70%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .card-buttons {
+    display: inline-block;
+    margin-left: 60%;
+  }
+}
+
+@media only screen and (max-width: 571px) {
+  .card-buttons {
+    display: inline-block;
+    margin-left: 50%;
+  }
+}
+
+@media only screen and (max-width: 475) {
+  .card-buttons {
+    display: inline-block;
+    margin-left: auto;
+  }
+}
+
+.card-btn{
+  margin-bottom: 10px;
+}
+
+md-card{
+  margin: 50px;
+}
+
+@keyframes SlideIn {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+bot.ng-enter{
+  margin-left: 100%;
+
+}
+
+bot {
+  margin-left: 0%;
+  transition: margin-left 1s linear;
+  animation-duration: 1s;
+  animation-name: slidein;
+}

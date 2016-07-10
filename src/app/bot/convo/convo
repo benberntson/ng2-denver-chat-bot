@@ -1,0 +1,10 @@
+  /home/ben/Code/typescript/angular2-webpack-starter/src/app/bot/convo:
+  total used in directory 80 available 110361624
+  drwxrwxr-x 2 ben ben 4096 Jul  8 18:14 .
+  drwxrwxr-x 3 ben ben 4096 Jul  8 17:50 ..
+  -rw-rw-r-- 1 ben ben  402 Jul  8 18:14 convo.component.ts
+  -rw-rw-r-- 1 ben ben 1689 Jul  8 18:14 convo.service.ts
+  -rw-rw-r-- 1 ben ben  708 Jul  8 16:56 convo.styles.css
+  -rw-rw-r-- 1 ben ben  657 Jul  8 18:03 convo.template.html
+  -rw-rw-r-- 1 ben ben   64 Jul  8 18:09 mini-convo.ts
+  -rw-rw-r-- 1 ben ben   61 Jul  8 16:04 topic.ts

@@ -1,0 +1,136 @@
+md-toolbar{
+  margin-bottom: 40px;
+}
+
+md-card {
+  margin: 25px;
+  padding-bottom: 70px;
+  margin-top: 0px;
+}
+
+.back-arrow {
+  position: relative;
+  top: -30px;
+  left: -30px;
+}
+
+.convo-div{
+  height: 200px;
+}
+
+.answer-card{
+  display: block;
+  position: relative;
+  left: 50%;
+  top: -169px;
+  width: 350px;
+  height: 75px;
+  margin-bottom: 0px;
+}
+
+.question-card{
+  display: block;
+  position: relative;
+  left: 10%;
+  width: 350px;
+  height: 75px;
+  margin-bottom: 0px;
+}
+
+@keyframes CardAnimation{
+  0%{
+    color: rgb(255,255,255);
+    transform: scale(0.3);
+  }
+  65%{
+    color: rgb(255,255,255);
+  }
+
+  100%{
+    color: rgb(0,0,0);
+    display: block;
+    transform: scale(1);
+  }
+}
+
+.animated-card{
+
+  animation: CardAnimation 0.5s;
+}
+
+.animated-answer-card{
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  animation: CardAnimation 0.5s;
+}
+
+.card-buttons{
+  display: inline-block;
+  margin-left: 80%;
+  float: right;
+}
+
+@media only screen and (max-width: 1480px) {
+  .answer-card{
+    left: 50%;
+    width: 300px;
+  }
+  .question-card{
+    left: 10%;
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 983px) {
+  .card-buttons {
+    display: inline-block;
+    margin-left: 70%;
+  }
+  .answer-card{
+    left: 50%;
+    width: 200px;
+  }
+  .question-card{
+    left: 10%;
+    width: 200px;
+  }
+}
+
+
+
+@media only screen and (max-width: 750px) {
+  .card-buttons {
+    display: inline-block;
+    margin-left: 60%;
+  }
+  .answer-card{
+    left: 50%;
+    width: 150px;
+  }
+  .question-card{
+    left: 10%;
+    width: 150px;
+  }
+}
+
+@media only screen and (max-width: 571px) {
+  .card-buttons {
+    display: inline-block;
+    margin-left: 50%;
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  .card-buttons {
+    display: inline-block;
+    margin-left: auto;
+  }
+  .answer-card{
+    left: 50%;
+    width: 150px;
+  }
+  .question-card{
+    left: 10%;
+    width: 150px;
+  }
+}

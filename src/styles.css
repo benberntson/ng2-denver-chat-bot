@@ -1,0 +1,23 @@
+@keyframes SlideIn {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+bot.ng-enter{
+  margin-left: 100%;
+
+}
+
+bot {
+  margin-left: 0%;
+  transition: margin-left 1s linear;
+  animation-duration: 1s;
+  animation-name: slidein;
+}

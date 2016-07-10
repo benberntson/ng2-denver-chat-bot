@@ -1,0 +1,26 @@
+<div class="bot" class="ng-animate">
+  <md-card>
+    <md-card-header>
+      <img md-card-avatar [src]="botAvatar" alt="Denver Robo">
+      <md-card-title>Denver Info Bot</md-card-title>
+      <md-card-subtitle>I'm here to help!</md-card-subtitle>
+    </md-card-header>
+    <img md-card-image
+         src="../assets/img/denver-arial.jpg"
+         alt="Denver Arial View"
+         class="">
+    <md-card-content>
+      <i>"Let's talk Denver!"</i>
+    </md-card-content>
+    <span class="card-buttons">
+      <md-card-actions>
+        <a md-raised-button
+           class="card-btn" color="warn"
+           [routerLink]="['../home']">Exit</a>
+        <a md-raised-button
+           class="card-btn" color="primary"
+           [routerLink]="['../bot/conversation']">Start Chat</a>
+      </md-card-actions>
+    </span>
+  </md-card>
+</div>
